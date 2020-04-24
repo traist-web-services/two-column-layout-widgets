@@ -1,0 +1,23 @@
+{
+  "name": "@traist/two-column-layout-widgets",
+  "version": "1.0.0",
+  "description": "A two column layout for Apostrophe CMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traist-web-services/two-column-layout-widgets.git"
+  },
+  "keywords": [
+    "Apostrophe",
+    "CMS"
+  ],
+  "author": "Joe Innes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/traist-web-services/two-column-layout-widgets/issues"
+  },
+  "homepage": "https://github.com/traist-web-services/two-column-layout-widgets#readme"
+}

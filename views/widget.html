@@ -1,0 +1,55 @@
+{% set w = data.widget %}
+
+{% if w.colWidth %}
+  {% set colWidth1 = w.colWidth + "%" %}
+  {% set colWidth2 = (100 - w.colWidth) + "%" %}
+{% endif %}
+
+<div class="c-two-column-widget">
+    <div class="c-two-column-widget__left-column" style="width: {{colWidth1 if colWidth1 else '50%'}}">
+        {{ apos.area(data.widget, 'areaLeft', {
+            widgets: {
+                'apostrophe-images': {
+                    limit: 1,
+                    controls: {
+                      position: 'top-left'
+                    }
+                },
+                'apostrophe-rich-text': {
+                    toolbar: [ 'Styles', 'Bold', 'Italic', 'Link', 'Unlink' ],
+                    styles: [
+                      { name: 'Heading', element: 'h3' },
+                      { name: 'Subheading', element: 'h4' },
+                      { name: 'Paragraph', element: 'p' }
+                    ],
+                    controls: {
+                      position: 'top-left'
+                    }
+                  }
+            }
+        }) }}
+    </div>
+    <div class="c-two-column-widget__right-column"  style="width: {{colWidth2 if colWidth2 else '50%'}}">
+        {{ apos.area(data.widget, 'areaRight', {
+            widgets: {
+                'apostrophe-images': {
+                    limit: 1,
+                    controls: {
+                      position: 'bottom-right'
+                    }
+                },
+                'apostrophe-rich-text': {
+                    toolbar: [ 'Styles', 'Bold', 'Italic', 'Link', 'Unlink' ],
+                    styles: [
+                      { name: 'Heading', element: 'h3' },
+                      { name: 'Subheading', element: 'h4' },
+                      { name: 'Paragraph', element: 'p' }
+                    ],
+                    controls: {
+                      position: 'bottom-right'
+                    }
+                  }
+            }
+        }) }}
+    </div>
+</div>
