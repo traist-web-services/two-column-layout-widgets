@@ -1,5 +1,5 @@
 {
-  "name": "@traist/two-column-layout-widgets",
+  "name": "@traist-web-services/two-column-layout-widgets",
   "version": "1.0.0",
   "description": "A two column layout for Apostrophe CMS",
   "main": "index.js",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/traist-web-services/two-column-layout-widgets/issues"
   },
-  "homepage": "https://github.com/traist-web-services/two-column-layout-widgets#readme"
+  "homepage": "https://github.com/traist-web-services/two-column-layout-widgets#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
