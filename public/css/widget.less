@@ -6,11 +6,16 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-  
-.c-two-column-widget__left-column {
-
-}
 
 .c-two-column-widget__right-column {
     padding-left: 2rem;
 }
+
+@media only screen and (max-width: 700px) {
+    .c-two-column-widget__left-column, .c-two-column-widget__right-column {
+        flex-basis: 100%;
+    }
+    .c-two-column-widget__right-column {
+        padding-left: 0;
+    }
+ }
